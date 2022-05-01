@@ -20,6 +20,10 @@ body {
     letter-spacing: 1px;
 }
 
+
+
+
+
 header {
     background-color: $background-color;
     height: 70px;
@@ -72,6 +76,11 @@ button {
     }
 
 }
+.save{
+    margin: 10px 100px;
+    width: 100px;
+
+}
 
 #quiz {
     background-color: $background-color2;
@@ -94,12 +103,7 @@ button {
         margin: auto;
         padding: 10px;
 
-        button {
-            margin: 8px 110px;
-            width: 100px;
-
-        }
-
+       
         span {
             font-size: 1.5rem;
             margin-right: 13px;
@@ -184,4 +188,38 @@ input[type='text'] {
 
 .submit-quiz {
     display: none;
+}
+
+
+@media (max-width:480px){
+
+header{
+    font-size: 1rem;
+
+}
+#quiz{
+width: 100%;
+    
+}
+.create-quiz{
+    max-width: 100%;
+
+
+}
+input[type='text']{
+    max-width: 80%;
+    padding: 0;
+
+    
+}
+       
+button{
+    width: fit-content;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
+.result-section{
+    font-size: 1.3rem;
+}
+
 }

@@ -18,7 +18,14 @@ let submitQuizButton = document.querySelector('.submit-quiz');
 
 
 
+
+
+
 takeQuizButton.addEventListener('click', () => {
+
+  if (quizArray.length  < 1) {
+alert ('"Please create quiz first"');
+  }
 
   if (quizArray.length > 0) {
 
@@ -41,12 +48,14 @@ deleteQuizButton.addEventListener('click', () => {
   quizArray = [];
   submitQuizButton.style.display = 'none';
   resultDiv.innerHTML = '';
+takeQuizButton.style.display='inline-block';
 });
 
 
 
 saveButton.addEventListener('click', () => {
   validateForm();
+
 });
 
 
@@ -249,7 +258,7 @@ showResults = () => {
         numCorrect++;
 
       }
-    } resultDiv.innerHTML = `${numCorrect} out of ${quizArray.length} `;
+    } resultDiv.innerHTML = `Result: ${numCorrect} / ${quizArray.length} correct answers. `;
 
     takeQuizButton.style.display = 'inline-block';
     submitQuizButton.style.display = 'none';

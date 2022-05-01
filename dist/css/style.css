@@ -72,6 +72,11 @@ button:hover {
   color: white;
 }
 
+.save {
+  margin: 10px 100px;
+  width: 100px;
+}
+
 #quiz {
   background-color: #1A83CC;
   width: 350px;
@@ -92,11 +97,6 @@ button:hover {
   height: 300px;
   margin: auto;
   padding: 10px;
-}
-
-#quiz .create-quiz button {
-  margin: 8px 110px;
-  width: 100px;
 }
 
 #quiz .create-quiz span {
@@ -186,5 +186,31 @@ input[type='text'] {
 
 .submit-quiz {
   display: none;
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1rem;
+  }
+  #quiz {
+    width: 100%;
+  }
+  .create-quiz {
+    max-width: 100%;
+  }
+  input[type='text'] {
+    max-width: 80%;
+    padding: 0;
+  }
+  button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+  }
+  .result-section {
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
