@@ -186,7 +186,6 @@ showQuiz = () => {
   ${options.c}. </div>
   <div class='option-d'><input type="radio" name="option${i}"  class="radio-button radio-4" value='${options.d}'>
   ${options.d}. </div>
-  <button class='del-quiz-item' type='button' onclick='delQuizItem(${i})'><i class="fa-solid fa-x"></i></button>
   </div>
   `
 
@@ -196,16 +195,7 @@ showQuiz = () => {
 
 }
 
-delQuizItem = (index) => {
-  quizArray.splice(index, 1);
-  localStorage.setItem('quizItem', JSON.stringify(quizArray));
-  showQuiz();
-  submitQuizButton.style.display = 'none';
-  if (quizArray.length == 0) {
-    resultDiv.innerHTML = '';
-  }
 
-}
 
 
 
