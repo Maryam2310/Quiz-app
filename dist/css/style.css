@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-transform: capitalize;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background: #575aff;
+  background: -webkit-gradient(linear, left top, right top, from(#575aff), to(#c7f8ff));
+  background: linear-gradient(90deg, #575aff 0%, #c7f8ff 100%);
+  background: -webkit-linear-gradient(90deg, #575aff 0%, #c7f8ff 100%);
+  letter-spacing: 1px;
+}
+
+header {
+  background-color: #00478F;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: #CBEBF5;
+}
+
+header .app-name {
+  margin-right: auto;
+}
+
+header .app-name i {
+  margin-right: 10px;
+}
+
+header .header-buttons {
+  margin-top: 5px;
+}
+
+button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: .6rem;
+  margin: 2px;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #00478F), color-stop(50%, white));
+  background: linear-gradient(to right, #00478F 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #00478F;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+button:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+#quiz {
+  background-color: #1A83CC;
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  margin-top: 5px;
+  color: #fff;
+}
+
+#quiz h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#quiz .create-quiz {
+  width: 320px;
+  height: 300px;
+  margin: auto;
+  padding: 10px;
+}
+
+#quiz .create-quiz button {
+  margin: 8px 110px;
+  width: 100px;
+}
+
+#quiz .create-quiz span {
+  font-size: 1.5rem;
+  margin-right: 13px;
+}
+
+#quiz .options-div {
+  margin-top: 20px;
+}
+
+#quiz .options-div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px;
+}
+
+input[type='radio'] {
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+input[type='text'] {
+  border: 0;
+  outline: 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  border-radius: 3px;
+  width: 90%;
+  padding: .3rem;
+}
+
+#show-quiz {
+  margin-top: 20px;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.quiz-item {
+  background-color: #1A83CC;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 10px;
+  position: relative;
+  -webkit-box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.quiz-item .question {
+  margin-bottom: 10px;
+}
+
+.quiz-item button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: transparent;
+}
+
+.result-section {
+  background-color: #00478F;
+  color: #fff;
+  font-size: 2.1rem;
+  text-align: center;
+  padding: 1rem;
+  height: 20vh;
+  padding-top: 5rem;
+}
+
+.result-section button {
+  margin: auto;
+}
+
+.submit-quiz {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz app</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://kit.fontawesome.com/2caacbe320.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icon.jpg">
+</head>
+
+<body>
+
+
+    <div class="main-container">
+
+        <header>
+            <div class="app-name">
+                <h1><i class="fa-solid fa-question"></i>quiz app </h1>
+            </div>
+
+            <div class="header-buttons">
+                <button class="take-quiz" type="button">take quiz</button>
+                <button class="del-quiz" type="button">delete quiz</button>
+
+            </div>
+        </header>
+
+        <section class="quiz-section">
+
+            <div id="quiz">
+                <h1>create quiz</h1>
+
+                <div class="create-quiz">
+                    <div class="question-div">
+                        <span>Q:</span><input type="text" class="question-input">
+
+                    </div>
+                    <div class="options-div">
+                        <h2>answers:</h2>
+                        <label>
+                            a:
+                            <input type="radio" name="answer" class="radio1">
+                            <input type="text" name="user-answer" class="answer1" tabindex="1">
+                        </label>
+
+                        <label>
+                            b:
+                            <input type="radio" name="answer" class="radio2">
+                            <input type="text" name="user-answer" class="answer2" tabindex="2">
+                        </label>
+                        <label>
+                            c:
+                            <input type="radio" name="answer" class="radio3">
+                            <input type="text" name="user-answer" class="answer3" tabindex="3">
+                        </label>
+                        <label>
+                            d:
+                            <input type="radio" name="answer" class="radio4">
+                            <input type="text" name="user-answer" class="answer4" tabindex="4">
+                        </label>
+
+                        <button type="button" class="save" tabindex="5">save</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="show-quiz"></div>
+
+        </section>
+
+        <section class="result-section">
+
+            <div class="show-results">
+
+            </div>
+
+            <button class="submit-quiz" type="button">submit quiz</button>
+
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
